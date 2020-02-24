@@ -8,7 +8,7 @@
         <div slot="title" class="modalThree">
           <i class="fas fa-dragon mr-3"></i>I brought back the title!
         </div>
-        <h5>Same modal, even more stuff</h5>
+        <div slot="body"><h5>Same modal, even more stuff</h5></div>
         <br />
         <!-- added an input to the modal layout -->
         <input class="mt-5" type="text" placeholder="Input field?.. what the..." v-model="message" />
@@ -17,13 +17,14 @@
     <div>
       <p class="mt-5">{{ message }}</p>
     </div>
-    <h2>Not ANOTHER modal!!</h2>
+    <div slot="body"><h2>Not ANOTHER modal!!</h2></div>
     <div class="row justify-content-center">
       <button class="btn btn-info" data-toggle="modal" data-target="#four">Modal four</button>
       <!-- bringing in modal again, adding title and a card to it -->
       <ModalOne id="four">
         <div slot="title">
-          <h3>More Stuff</h3>
+          <h3>HERE IS MY DATA!</h3>
+          <!-- FIXME why isn't this working? -->
         </div>
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="../assets/robot.png" alt="Card image cap" />

@@ -10,9 +10,12 @@
       <button class="btn btn-warning" data-toggle="modal" data-target="#two">Modal two</button>
     </div>
     <ModalOne id="one">
-      <div slot="title">some title</div>STUFF HERE
+      <div slot="title">some title</div>
+      <div slot="body">STUFF HERE</div>
     </ModalOne>
-    <ModalOne id="two">no title? same modal, more STUFF</ModalOne>
+    <ModalOne id="two">
+      <div slot="body">no title? same modal, more STUFF</div>
+      </ModalOne>
   </div>
 </template>
 

@@ -13,7 +13,7 @@
         </div>
         <div class="modal-body">
           <!-- slot added for input -->
-          <slot></slot>
+          <slot name="body"></slot>
         </div>
         <div class="modal-footer">
           <h5>Neato!</h5>

@@ -23,9 +23,11 @@
       <!-- bringing in modal again, adding title and a card to it -->
       <ModalOne id="four">
         <div slot="title">
-          <h3>HERE IS MY DATA!</h3>
-          <!-- FIXME why isn't this working? -->
+          <h2>NEAT! a card</h2>
         </div>
+        <!-- Let's add a card to our modal-->
+        <div slot="body">
+        <h3>HERE IT IS!!</h3>
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="../assets/robot.png" alt="Card image cap" />
           <div class="card-body">
@@ -33,6 +35,7 @@
             <p class="card-text">I used the same modal, but added a card!</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
+        </div>
         </div>
       </ModalOne>
     </div>
@@ -60,4 +63,20 @@ export default {
   color: blue;
   font-style: italic;
 }
+
+h3{
+  color: red;
+  animation: blink 1s infinite
+}
+
+@keyframes blink {
+  from {
+    color: red
+  }
+  to{
+    color:yellow
+  }
+  
+}
+
 </style>
